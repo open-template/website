@@ -18,6 +18,17 @@ site_name: Open Template Tutorial
 site_url: https://open-template.github.io/open-template/
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github 
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -29,22 +40,9 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
 
-plugins:
-  - social
+# plugins:
+#   - social
 
 extra:
   social:
@@ -68,9 +66,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
   &copy; 2023 <a href="https://github.com/romdhanisam"  target="_blank" rel="noopener">Samir Romdhani</a>
